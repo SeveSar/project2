@@ -636,63 +636,63 @@ ul, li {
 .work__catalog-item_1 {
   background-image: url(../image/work/bottle.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_2 {
   background-image: url(../image/work/chaska.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_3 {
   background-image: url(../image/work/book.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_4 {
   background-image: url(../image/work/dress.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_5 {
   background-image: url(../image/work/box.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_6 {
   background-image: url(../image/work/beers.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_7 {
   background-image: url(../image/work/znachki.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_8 {
   background-image: url(../image/work/bag.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .work__catalog-item_9 {
   background-image: url(../image/work/lkrem.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
