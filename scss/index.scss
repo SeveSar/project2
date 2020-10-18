@@ -202,6 +202,15 @@ ul,li{
 
 }
 
+.header.fixed{
+    position: fixed;
+    padding: 15px 0 15px 0;
+    height: auto;
+    background-color: #C91F44;
+}
+
+
+
 .promo{
     padding-top: 156px;
     height: 946px;
@@ -466,7 +475,7 @@ ul,li{
     &__action-item:nth-child(1){
 
         width: 50%;
-        >img{
+        img{
             display: block;
             margin-bottom: 14px;
             
@@ -475,7 +484,7 @@ ul,li{
     &__action-item:nth-child(2){
 
         width: 50%;
-        >img{
+        img{
             display: block;
             margin-bottom: 10px;
             
@@ -585,115 +594,21 @@ ul,li{
         }
     }
     &__catalog-item{
-        height: 316px;
+        
         margin-bottom: 30px;
         border-radius: 5px;
         background-color: white;
-        &_1{
-            
-            background-image: url(../image/work/bottle.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-        &_2{
-            
-            background-image: url(../image/work/chaska.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
+        
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            object-fit: contain;
         }
         
-        &_3{
-            
-            background-image: url(../image/work/book.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
+    }
 
-        &_4{
-            
-            background-image: url(../image/work/dress.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
     
-        &_5{
-            
-            background-image: url(../image/work/box.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        &_6{
-            
-            background-image: url(../image/work/beers.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        &_7{
-            
-            background-image: url(../image/work/znachki.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        &_8{
-            
-            background-image: url(../image/work/bag.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        &_9{
-            
-            background-image: url(../image/work/lkrem.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        
-        
-        
-    }
-
-    &__catalog_2{
-        .work__catalog-item_1{
-            background-image: url(../image/work/photo_2020-07-25_19-28-09.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .work__catalog-item_3{
-            background-image: url(../image/work/photo_2020-09-25_13-31-44.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .work__catalog-item_5{
-            background-image: url(../image/work/photo_2020-09-25_13-35-29.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
 
     .btn--square{
         

@@ -235,6 +235,13 @@ ul, li {
   margin-right: 0;
 }
 
+.header.fixed {
+  position: fixed;
+  padding: 15px 0 15px 0;
+  height: auto;
+  background-color: #C91F44;
+}
+
 .promo {
   padding-top: 156px;
   height: 946px;
@@ -505,7 +512,7 @@ ul, li {
   width: 50%;
 }
 
-.design__action-item:nth-child(1) > img {
+.design__action-item:nth-child(1) img {
   display: block;
   margin-bottom: 14px;
 }
@@ -514,7 +521,7 @@ ul, li {
   width: 50%;
 }
 
-.design__action-item:nth-child(2) > img {
+.design__action-item:nth-child(2) img {
   display: block;
   margin-bottom: 10px;
 }
@@ -627,94 +634,17 @@ ul, li {
 }
 
 .work__catalog-item {
-  height: 316px;
   margin-bottom: 30px;
   border-radius: 5px;
   background-color: white;
 }
 
-.work__catalog-item_1 {
-  background-image: url(../image/work/bottle.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_2 {
-  background-image: url(../image/work/chaska.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_3 {
-  background-image: url(../image/work/book.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_4 {
-  background-image: url(../image/work/dress.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_5 {
-  background-image: url(../image/work/box.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_6 {
-  background-image: url(../image/work/beers.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_7 {
-  background-image: url(../image/work/znachki.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_8 {
-  background-image: url(../image/work/bag.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog-item_9 {
-  background-image: url(../image/work/lkrem.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog_2 .work__catalog-item_1 {
-  background-image: url(../image/work/photo_2020-07-25_19-28-09.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog_2 .work__catalog-item_3 {
-  background-image: url(../image/work/photo_2020-09-25_13-31-44.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.work__catalog_2 .work__catalog-item_5 {
-  background-image: url(../image/work/photo_2020-09-25_13-35-29.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.work__catalog-item img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .work .btn--square {
