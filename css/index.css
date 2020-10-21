@@ -175,7 +175,7 @@ ul, li {
   width: 100%;
   padding: 47px 0 47px 0;
   height: 156px;
-  z-index: 4;
+  z-index: 100;
 }
 
 .header a {
@@ -650,5 +650,20 @@ ul, li {
 .work .btn--square {
   margin: 0 auto;
   margin-top: 65px;
+}
+
+.brand {
+  padding: 113px 0 48px 0;
+  background-color: #4b2d7f;
+}
+
+.brand__item {
+  margin-bottom: 60px;
+}
+
+.brand__item img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

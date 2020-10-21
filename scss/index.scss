@@ -589,6 +589,7 @@ ul,li{
 
     &__catalog{
         display: none;
+        // height: 1178px;
         &_active{
             display: block;
         }
@@ -615,4 +616,24 @@ ul,li{
         margin: 0 auto;
         margin-top: 65px;
     }
+}
+
+.brand{
+    padding: 113px 0 48px 0;
+    background-color: #4b2d7f;
+    
+
+   
+    &__item{
+        margin-bottom: 60px;
+      
+        img{
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+           
+            
+        }
+    }
+    
 }

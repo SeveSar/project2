@@ -4,8 +4,8 @@ $(document).ready(function(){
     
         $(this)
         .addClass('btn-tabs__item_active').siblings().removeClass('btn-tabs__item_active')
-        .closest("article.ideas__item").find("div.ideas__item-descr").hide(700)
-        .eq($(this).index()).show(700);
+        .closest("article.ideas__item").find("div.ideas__item-descr").slideUp(700).delay(500)
+        .eq($(this).index()).slideDown(700);
        
         
     });
@@ -14,8 +14,8 @@ $(document).ready(function(){
        
         $(this)
         .addClass('btn-tabs__item_active').siblings().removeClass('btn-tabs__item_active')
-        .closest("div.container").find("div.work__catalog").hide(700)
-        .eq($(this).index()).show(700);
+        .closest("div.container").find("div.work__catalog").fadeOut(700).delay(700)
+        .eq($(this).index()).fadeIn(700);
        
         
     });
