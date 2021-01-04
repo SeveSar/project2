@@ -17,11 +17,29 @@
 </head>
 
 <body>
+    <!-- sprite -->
+    <svg style="display: none;">
+        <symbol id="arrow-up" viewBox="0 0 512.171 512.171">
+            <g>
+                <path d="M476.723,216.64L263.305,3.115C261.299,1.109,258.59,0,255.753,0c-2.837,0-5.547,1.131-7.552,3.136L35.422,216.64
+			c-3.051,3.051-3.947,7.637-2.304,11.627c1.664,3.989,5.547,6.571,9.856,6.571h117.333v266.667c0,5.888,4.779,10.667,10.667,10.667
+			h170.667c5.888,0,10.667-4.779,10.667-10.667V234.837h116.885c4.309,0,8.192-2.603,9.856-6.592
+			C480.713,224.256,479.774,219.691,476.723,216.64z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <a href="#promo" class="arrow-up">
+        <!-- <img src="icons/up-arrow.svg" alt=""> -->
+        <svg>
+            <use xlink:href="#arrow-up"></use>
+        </svg>
+    </a>
     <header class="header">
         <div class="container-xl">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="#" class="logo__img_link"><img src="./icons/Shape.png" alt="Logo" href="#"></a>
+                    <a href="#" class="header__logo__img_link"><img src="./icons/Shape.png" alt="Logo" href="#"></a>
                     <a href="#" class="header__title">BlueRex</a>
                 </div>
                 <nav class="header__navbar">
@@ -33,11 +51,15 @@
                     <a href="#" class="header__link" data-scroll="#">Faq</a>
                     <a href="#" class="header__link" data-scroll="#">Contact</a>
                 </nav>
+                <button class="burger">
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
     <section class="promo" id="promo">
+
         <div class="container-lg">
             <div class="promo__inner">
                 <article class="promo__content animate__animated wow animate__fadeInLeftBig">
@@ -54,9 +76,7 @@
                         <button class="btn btn--dark">Read more</button>
                     </div>
                 </article>
-                <div class="promo__photo animate__animated wow animate__fadeInRightBig">
-                    <img src="image/person.png" alt="">
-                </div>
+                <img class="promo__photo" src="image/person.png" alt="">
             </div>
         </div>
     </section>
@@ -72,11 +92,11 @@
                         We turn creative ideas
                         into your business.
                     </h2>
-                    <ul class="btn-tabs">
-                        <li class="btn-tabs__item btn-tabs__item_active">Web design</li>
-                        <li class="btn-tabs__item">Mobile app</li>
-                        <li class="btn-tabs__item">Branding</li>
-                        <li class="btn-tabs__item">Branding</li>
+                    <ul class="btn-tabs" data-target="ideas__list">
+                        <li class="btn-tabs__item btn-tabs__item_active" data-target="ideas__item"><button>Web design</button></li>
+                        <li class="btn-tabs__item" data-target="ideas__item"><button>Mobile app</button></li>
+                        <li class="btn-tabs__item" data-target="ideas__item"><button>Branding</button></li>
+                        <li class="btn-tabs__item" data-target="ideas__item"><button>Branding</button></li>
                     </ul>
                     <div class="ideas__item-descr ideas__item-descr_active">
                         Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
@@ -102,8 +122,8 @@
                     <a href="#" class="btn--square">Read more</a>
                 </article>
 
-                <div class="ideas__photo animate__animated wow animate__fadeInUp">
-                    <img src="image/watch-3.png" alt="">
+                <div class="ideas__photo-wrapper">
+                    <img class="ideas__photo animate__animated wow animate__fadeInUp" src="image/watch-3.png" alt="">
                 </div>
             </div>
         </div>
@@ -113,7 +133,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="feature__item animate__animated wow animate__zoomInLeft">
+                    <div class="feature__item animate__animated wow animate__zoomInLeft" data-wow-delay="1s"
+                        data-wow-duration="1.3s">
                         <img src="icons/dudka_white.svg" class="feature__item-img" alt="Logo">
                         <div class="feature__item-number">500+</div>
                         <h3 class="feature__item-title">
@@ -127,7 +148,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature__item animate__animated wow animate__zoomIn">
+                    <div class="feature__item animate__animated wow animate__zoomIn" data-wow-delay="1s">
                         <img src="icons/dudka_white.svg" class="feature__item-img" alt="Logo">
                         <div class="feature__item-number">500+</div>
                         <h3 class="feature__item-title">
@@ -141,7 +162,8 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature__item animate__animated wow animate__zoomInRight">
+                    <div class="feature__item animate__animated wow animate__zoomInRight" data-wow-delay="1s"
+                        data-wow-duration="1.3s">
                         <img src="icons/dudka_white.svg" class="feature__item-img" alt="Logo">
                         <div class="feature__item-number">500+</div>
                         <h3 class="feature__item-title">
@@ -161,7 +183,7 @@
 
     <section class="business">
         <div class="container">
-            <div class="business__inner animate__animated wow animate__bounceInLeft">
+            <div class="business__inner animate__animated wow animate__bounceInLeft" data-wow-delay="1s">
                 <div class="business__subtitle">
                     Let's Grow Together
                 </div>
@@ -224,9 +246,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="design__video">
-                        <a class="design__img" id="jsDesign-img" target="_blank" href="https://youtu.be/0Nj6zkND88U">
-                            <img src="icons/play.svg" alt="">
-                        </a>
+                        <div class="embed">
+                            <!-- <img class="design__back-Img" src="image/video_back.png" alt="Video"> -->
+                            <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <button class="play_yt"></button>
                     </div>
                 </div>
             </div>
@@ -243,167 +267,69 @@
                 Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et,
                 consec tetur adipi scing elit.
             </div>
-            <ul class="btn-tabs">
-                <li class="btn-tabs__item btn-tabs__item_active">Web design</li>
-                <li class="btn-tabs__item">Mobile app</li>
-                <li class="btn-tabs__item">Branding</li>
-                <li class="btn-tabs__item">Branding</li>
+            <ul class="btn-tabs" data-target="work__list">
+                <li class="btn-tabs__item btn-tabs__item_active" data-target="work__item" data-filter="all">
+                    <button>All</button>
+                </li>
+                <li class="btn-tabs__item" data-target="work__item" data-filter="web design">
+                    <button>Web design</button>
+                </li>
+                <li class="btn-tabs__item" data-target="work__item" data-filter="branding">
+                    <button>Branding</button>
+                </li>
+                <li class="btn-tabs__item" data-target="work__item" data-filter="app mobile">
+                    <button>App mobile</button>
+                </li>
             </ul>
-            <div class="work__catalog work__catalog_active">
+            <div class="work__catalog">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="web design">
                             <img src="image/work/bottle.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="web design">
                             <img src="image/work/chaska.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="app mobile">
                             <img src="image/work/book.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="branding">
                             <img src="image/work/dress.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="web design">
                             <img src="image/work/box.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="app mobile">
                             <img src="image/work/beers.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="branding">
                             <img src="image/work/znachki.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="app mobile">
                             <img src="image/work/bag.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
+                    <div class="col-md- col-lg-4 work__wrap">
+                        <div class="work__catalog-item" data-cat="app mobile">
                             <img src="image/work/lkrem.png" alt="">
                         </div>
                     </div>
                 </div>
                 <a class="btn--square" href="#">Read more</a>
-            </div>
-            <div class="work__catalog">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/bottle.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/chaska.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/book.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/dress.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/box.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/beers.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/znachki.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <a class="btn--square" href="#">Read more</a>
-            </div>
-            <div class="work__catalog">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/chaska.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/dress.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/znachki.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/bag" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/lkrem.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <a class="btn--square" href="#">Read more</a>
-            </div>
-            <div class="work__catalog">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/bottle.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/chaska.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/book.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/beers.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/znachki.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work__catalog-item">
-                            <img src="image/work/chaska.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -411,42 +337,42 @@
     <section class="brand">
         <div class="container">
             <div class="row align-items-md-center">
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/amazon.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/addidas.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/Lenovo.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/disney.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/cisco.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/puma.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/apple.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
                     <div class="brand__item">
                         <img src="image/brand/mini.png" alt="Logo">
                     </div>
@@ -588,7 +514,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__text">© 2022 Theme by psdfreebies.com   ∙   Privacy   ∙   Terms of Use   ∙   Site Map</div>
+            <div class="footer__text">© 2022 Theme by psdfreebies.com ∙ Privacy ∙ Terms of Use ∙ Site Map</div>
         </div>
     </footer>
 
