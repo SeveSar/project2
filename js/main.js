@@ -73,7 +73,9 @@ $(document).ready(function(){
         let scrollId =  $(this).data('scroll');
         let offsetTopItem = $(scrollId).offset().top;
         $('html, body').animate({scrollTop: offsetTopItem - 50}, 700);
-        toggleMenu();
+        $(burgerelement).removeClass('active');
+        $(navbarElement).removeClass("active");
+        $("body").removeClass('no-scroll');
         
     });
     // arrow-up
