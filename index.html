@@ -24,7 +24,7 @@
                 <path d="M476.723,216.64L263.305,3.115C261.299,1.109,258.59,0,255.753,0c-2.837,0-5.547,1.131-7.552,3.136L35.422,216.64
 			c-3.051,3.051-3.947,7.637-2.304,11.627c1.664,3.989,5.547,6.571,9.856,6.571h117.333v266.667c0,5.888,4.779,10.667,10.667,10.667
 			h170.667c5.888,0,10.667-4.779,10.667-10.667V234.837h116.885c4.309,0,8.192-2.603,9.856-6.592
-			C480.713,224.256,479.774,219.691,476.723,216.64z"/>
+			C480.713,224.256,479.774,219.691,476.723,216.64z" />
             </g>
         </symbol>
     </svg>
@@ -47,9 +47,9 @@
                     <a href="#" class="header__link" data-scroll="#ideas">About</a>
                     <a href="#" class="header__link" data-scroll="#feature">Features</a>
                     <a href="#" class="header__link" data-scroll="#work">Pruduct</a>
-                    <a href="#" class="header__link" data-scroll="#">Reviews</a>
-                    <a href="#" class="header__link" data-scroll="#">Faq</a>
-                    <a href="#" class="header__link" data-scroll="#">Contact</a>
+                    <a href="#" class="header__link" data-scroll="#brand">Reviews</a>
+                    <a href="#" class="header__link" data-scroll="#testemonial">Faq</a>
+                    <a href="#" class="header__link" data-scroll="#help">Contact</a>
                 </nav>
                 <button class="burger">
                     <span></span>
@@ -76,7 +76,7 @@
                         <button class="btn btn--dark">Read more</button>
                     </div>
                 </article>
-                <img class="promo__photo" src="image/person.png" alt="">
+                <img class="promo__photo animate__animated wow animate__fadeInRightBig" src="image/person.png" alt="">
             </div>
         </div>
     </section>
@@ -93,7 +93,8 @@
                         into your business.
                     </h2>
                     <ul class="btn-tabs" data-target="ideas__list">
-                        <li class="btn-tabs__item btn-tabs__item_active" data-target="ideas__item"><button>Web design</button></li>
+                        <li class="btn-tabs__item btn-tabs__item_active" data-target="ideas__item"><button>Web
+                                design</button></li>
                         <li class="btn-tabs__item" data-target="ideas__item"><button>Mobile app</button></li>
                         <li class="btn-tabs__item" data-target="ideas__item"><button>Branding</button></li>
                         <li class="btn-tabs__item" data-target="ideas__item"><button>Branding</button></li>
@@ -121,7 +122,6 @@
                     </div>
                     <a href="#" class="btn--square">Read more</a>
                 </article>
-
                 <div class="ideas__photo-wrapper">
                     <img class="ideas__photo animate__animated wow animate__fadeInUp" src="image/watch-3.png" alt="">
                 </div>
@@ -244,11 +244,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-5">
                     <div class="design__video">
                         <div class="embed">
                             <!-- <img class="design__back-Img" src="image/video_back.png" alt="Video"> -->
-                            <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <button class="play_yt"></button>
                     </div>
@@ -334,7 +336,7 @@
         </div>
     </section>
 
-    <section class="brand">
+    <section class="brand" id="brand">
         <div class="container">
             <div class="row align-items-md-center">
                 <div class="col-md-6 col-lg-3 offset-lg-0 col-xl-2 offset-xl-1">
@@ -381,11 +383,11 @@
         </div>
     </section>
 
-    <section class="testemonial">
+    <section class="testemonial" id="testemonial">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="testemonial__content">
+                <div class="col-md-12 col-lg-6">
+                    <div class="testemonial__content animate__animated wow animate__fadeInLeft">
                         <div class="testemonial__subtitle">Our Happy Client</div>
                         <h2 class="title title_mini testemonial__title">Testimonials</h2>
                         <div class="testemonial__descr">
@@ -398,17 +400,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="testemonial__photo">
-                        <img src="image/testemon.png" alt="">
-                    </div>
+                <div class="col-md-6 testemonial__photo">
+                    <img src="image/testemon.png" class="animate__animated wow animate__fadeInDown" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="help">
-        <div class="container">
+    <section class="help" id="help">
+        <div class="container animate__animated wow animate__fadeInRight">
             <h2 class="title title_mini">Need help?</h2>
             <div class="help__subtitle">Don't Forget to Contact With Us</div>
             <div class="help__descr">
@@ -416,10 +416,10 @@
                 terds.
                 Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus .
             </div>
-            <form class="help__form">
-                <input name='name' type="text" placeholder="Name">
+            <form id="form" class="help__form" action="#" method="post">
+                <input name='name' type="text" placeholder="Name" >
                 <input name="email" type="email" placeholder="Email">
-                <button class="btn--square help__form_btn" type="submit">Submit</button>
+                <input class="btn--square help__form_btn" type="submit" value="Submit">
             </form>
         </div>
     </section>
@@ -447,7 +447,7 @@
 
     <div class="company">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-md-center">
                 <div class="col-md-5">
                     <div class="company__content">
                         <div class="company__item">
@@ -492,7 +492,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 offset-md-1">
+                <div class="col-md-6 offset-lg-1">
                     <div class="company__photos">
                         <div class="company__img">
                             <img src="image/Company1.png" alt="">
